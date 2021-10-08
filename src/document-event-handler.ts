@@ -7,7 +7,7 @@ export const handler = async (event: any, context: any, callback: any): Promise<
     if (response) return true;
     else return false;
 
-  } catch (err) {
+  } catch (err: any) {
     console.log('err :>> ', err);
     return new Error(err);
     ;
